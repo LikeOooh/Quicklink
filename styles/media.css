@@ -1,0 +1,543 @@
+@media screen and (max-width: 1440px) {
+
+    .container {
+        max-width: 728px;
+    }
+
+    .header {
+        max-width: 728px;
+        gap: 433px;
+        flex-flow: row-reverse;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    .header .burger-checkbox,
+    .header .burger {
+        display: inline-block;
+    }
+
+    .header .burger.burger-icon-wrapper {   
+        box-sizing: border-box;
+        width: 56px;
+        height: 40px;
+        padding: 8px 16px;         
+        border-radius: 16px;
+        background-color: rgba(118, 117, 123, 1);
+    }
+
+    .header .burger.burger-icon-wrapper .burger-icon {      
+        content: url("../icons/burger.png");
+        width: 24px;
+        height: 24px;
+        border:hidden;
+    }
+
+
+    .header .burger-checkbox~.login-and-buttons a .login,
+    .header .burger-checkbox~.login-and-buttons a .login .login-icon-wrapper,
+    .header .burger-checkbox~.login-and-buttons,
+    .header .burger-checkbox~.login-and-buttons .buttons {
+        display: none;
+        margin-left: 0;
+    }
+
+
+    .header .burger-checkbox:checked~.login-and-buttons a .login,
+    .header .burger-checkbox:checked~.login-and-buttons a .login .login-icon-wrapper {
+        display: block;
+    }
+
+
+    .header .burger-checkbox:checked~.burger,
+    .header .burger-checkbox:checked~.burger-checkbox {
+        position: absolute;
+        right: 24px;
+        top: 18px;
+        z-index: 4;
+    }
+
+    .header .burger-checkbox:checked~.burger.burger-icon-wrapper {
+        padding: 8px 16px; 
+    }
+
+    .header .burger-checkbox:checked~.burger.burger-icon-wrapper .burger-icon {    
+        content: url("../icons/close.png");
+        width: 24px;
+        height: 24px;
+    }
+
+    .header .burger-checkbox:checked~.bg {
+        display: block;
+    }
+
+    .header .burger-checkbox:checked~.logo {
+        display: none;
+    }
+
+    .header .burger-checkbox:checked~.login-and-buttons {
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        gap: 0;
+        width: 100%;
+        padding: 112px 24px 18px 24px;
+        border-radius: 32px;
+        border-width: 1px solid rgba(0, 0, 0, 1);
+        background-color: rgba(51, 51, 51, 1);
+        z-index: 3;
+    }
+
+    .header .burger-checkbox:checked~.login-and-buttons .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .header .burger-checkbox:checked~.login-and-buttons .buttons .button {
+        box-sizing: border-box;
+        width: 100%;
+        border-bottom: 1px rgba(118, 117, 123, 1);
+        border-top: 1px solid rgba(118, 117, 123, 1);
+        padding: 24px;
+    }
+
+    .header .burger-checkbox:checked~.login-and-buttons .buttons .button a {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .header .burger-checkbox:checked~.login-and-buttons .buttons .button a:hover,
+    .header .burger-checkbox:checked~.login-and-buttons a .login .login-text:hover {
+        color: rgba(245, 250, 147, 1);
+    }
+
+    .header .burger-checkbox:checked~.login-and-buttons a .login {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0 24px 24px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .header .burger-checkbox:checked~.login-and-buttons a .login .login-text {
+        display: block;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .header .burger-checkbox~.login-and-buttons a .login .login-icon-wrapper {
+        display: block;
+    }
+
+    .hero-block .hero-pic .hero-pic-image {
+        max-height: 408px;
+        opacity: 20%;
+    }
+
+    .features {
+        flex-direction: column;
+    } 
+
+    .screens .images {
+        max-width: 720px;
+        min-height: 310px;
+    }
+
+    .screens .images .image-profile {
+        max-width: 473.76px;
+        gap: 26.29px;
+        margin-top: 53.28px;
+        border-radius: 17.14px;
+        padding: 21.03px 26.29px;
+    }
+
+    .screens .images .image-profile .hero-block {
+        gap: 56px;
+        max-width: 369.39px;
+    }
+
+
+    .screens .images .image-profile .hero-block .avatar-area,
+    .screens .images .image-profile .hero-block .avatar-area .avatar {
+        width: 131.45px;
+        height: 131.45px;
+    }
+
+    .screens .images .image-profile .hero-block .content {
+        gap: 21.03px;
+    }
+
+
+    .screens .images .image-profile .hero-block .content .content-text {
+        gap: 7.23px;
+    }
+
+    .screens .images .image-profile .hero-block .content .content-text .content-title {
+        font-size: 22.35px;
+        line-height: 24.58px;
+    }
+
+    .screens .images .image-profile .hero-block .content .content-text .content-description {
+        font-size: 7.89px;
+        line-height: 9.2px;
+    }
+
+    .screens .images .image-profile .hero-block .content .button-wrapper {
+        max-width: 76.24px;
+        gap: 2.63px;
+        padding: 5.92px 4.6px;
+        border-radius: 5.92px;
+    }
+
+    .screens .images .image-profile .hero-block .content .button-wrapper .button-text {
+        font-size: 5.92px;
+        line-height: 8.08px;
+    }
+
+    .screens .images .image-profile .hero-block .content .button-wrapper .arrow-icon {
+        max-width: 7.89px;
+        max-height: 7.89px;
+    }
+
+    .screens .images .image-card {
+        width: 158.4px;
+        height: 309.6px;
+        left: 525.6px;
+        gap: 11.32px;
+        z-index: -1;
+        border-radius: 15.09px;
+        padding: 15.09px;
+    }
+
+    .screens .images .image-card .image-area {
+        max-height: 122.63px;
+    }
+
+    .screens .images .image-card .image-area .image {
+        width: 122.63px;
+        height: 122.63px;
+        border-radius: 11.32px;
+    }
+
+    .screens .images .image-card .content,
+    .screens .images .image-card .content .content-text {
+        gap: 8.49px;
+    }
+
+    .screens .images .image-card .content .content-text .content-title {
+        font-size: 19.81px;
+        line-height: 25.47px;
+    }
+
+    .screens .images .image-card .content .content-text .content-description {
+        font-size: 8.49px;
+        line-height: 12.26px;
+    }
+
+    .screens .images .image-card .content .button-area .button-wrapper {
+        max-width: 84.9px;
+        border-radius: 8.49px;
+        gap: 3.77px;
+        padding: 8.49px 6.6px;
+    }
+
+    .screens .images .image-card .content .button-area .button-wrapper .button-text {
+        font-size: 8.49px;
+        line-height: 11.6px;
+
+    }
+
+    .screens .images .image-card .content .button-area .button-wrapper .arrow-icon {
+        width: 11.32px;
+        height: 11.32px;
+    }
+
+    .screens .images .image-company-list {
+        width: 392.4px;
+        height: 233.28px;
+        top: 76.32px;
+        left: 36px;
+        border-radius: 17.25px;
+        padding: 12.94px;
+        gap: 17.25px;
+    }
+
+    .screens .images .image-company-list .title {
+        font-size: 12.94px;
+        line-height: 14.01px;
+    }
+
+    .screens .images .image-company-list .job-list {
+        gap: 16px;
+    }
+
+    .screens .images .image-company-list .job-list .job {
+        gap: 5px;
+    }
+
+    .screens .images .image-company-list .job-list .job .job-info {
+        gap: 1.08px;
+    }
+
+    .screens .images .image-company-list .job-list .job .job-info .company {
+        gap: 4.31px;
+    }
+
+    .screens .images .image-company-list .job-list .job .job-info .company .company-name {
+        font-size: 12.94px;
+        line-height: 15.09px;
+    }
+
+    .screens .images .image-company-list .job-list .job .job-info .company .period,
+    .screens .images .image-company-list .job-list .job .job-info .company-link,
+    .screens .images .image-company-list .job-list .job .position {
+        font-size: 9.7px;
+        line-height: 14.01px;
+    }
+
+    .price-block .price-list .card-price .content .content-text .description {
+        min-height: 48px;
+    }
+
+    .footer .column {
+        flex: 1 0 352px;
+        max-width: 352px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .container,
+    .header {
+        max-width: 335px;
+    }
+
+    .header {
+        gap: 41px;
+    }
+
+
+    .hero-block .hero-pic .hero-pic-image {
+        max-height: 237px;
+        opacity: 20%;
+    }
+
+    .hero-block .text-content .illustration {
+        width: 34px;
+        height: 30px;
+        right: 30px;
+        top: 14px;
+    }
+
+    .hero-block .text-content .underline {
+        width: 100.69px;
+        height: 20.78px;
+        top: 167.78px;
+        left: 0px;
+    }
+
+    .hero-block .text-content .hero-block-title,
+    h1 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .hero-block .text-content .hero-block-info {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .hero-block .actions {
+        gap: 16px;
+    }    
+    
+    .features .feature-card .content .content-text {
+        max-width: 271px;
+        width: 100%;
+    }
+
+    .screens .images {
+        max-width: 335px;
+        min-height: 146px;
+    }
+
+    .screens .images .image-profile {
+        max-width: 220.43px;
+        gap: 12.23px;
+        margin-top: 24.79px;
+        border-radius: 7.97px;
+        padding: 9.79px 12.23px;
+    }
+
+    .screens .images .image-profile .hero-block {
+        gap: 26.61px;
+        max-width: 171.87px;
+    }
+
+
+    .screens .images .image-profile .hero-block .avatar-area,
+    .screens .images .image-profile .hero-block .avatar-area .avatar {
+        width: 61.16px;
+        height: 61.16px;
+    }
+
+    .screens .images .image-profile .hero-block .content {
+        gap: 9.79px;
+    }
+
+
+    .screens .images .image-profile .hero-block .content .content-text {
+        gap: 3.36px;
+    }
+
+    .screens .images .image-profile .hero-block .content .content-text .content-title {
+        font-size: 10.4px;
+        line-height: 11.44px;
+    }
+
+    .screens .images .image-profile .hero-block .content .content-text .content-description {
+        font-size: 3.67px;
+        line-height: 4.28px;
+    }
+
+    .screens .images .image-profile .hero-block .content .button-wrapper {
+        box-sizing: border-box;
+        max-width: 35.47px;
+        gap: 1.22px;
+        padding: 2.75px 2.14px;
+        border-radius: 2.75px;
+    }
+
+    .screens .images .image-profile .hero-block .content .button-wrapper .button-text {
+        font-size: 2.75px;
+        line-height: 3.75px;
+    }
+
+    .screens .images .image-profile .hero-block .content .button-wrapper .arrow-icon {
+        max-width: 3.67px;
+        max-height: 3.67px;
+    }
+
+    .screens .images .image-card {
+        width: 73.7px;
+        height: 144.05px;
+        left: 244px;
+        gap: 5.27px;
+        z-index: -1;
+        border-radius: 7.02px;
+        padding: 7.02px;
+    }
+
+    .screens .images .image-card .image-area {
+        max-height: 57.06px;
+    }
+
+    .screens .images .image-card .image-area .image {
+        width: 57.06px;
+        height: 57.06px;
+        border-radius: 5.27px;
+    }
+
+    .screens .images .image-card .content,
+    .screens .images .image-card .content .content-text {
+        gap: 3.95px;
+    }
+
+    .screens .images .image-card .content .content-text .content-title {
+        font-size: 9.22px;
+        line-height: 11.85px;
+    }
+
+    .screens .images .image-card .content .content-text .content-description {
+        font-size: 3.95px;
+        line-height: 5.71px;
+    }
+
+    .screens .images .image-card .content .button-area .button-wrapper {
+        max-width: 39.5px;
+        border-radius: 3.95px;
+        gap: 1.76px;
+        padding: 3.95px 3.07px;
+    }
+
+    .screens .images .image-card .content .button-area .button-wrapper .button-text {
+        font-size: 3.95px;
+        line-height: 5.4px;
+
+    }
+
+    .screens .images .image-card .content .button-area .button-wrapper .arrow-icon {
+        width: 5.27px;
+        height: 5.27px;
+    }
+
+    .screens .images .image-company-list {
+        width: 182.58px;
+        height: 108.54px;
+        top: 36px;
+        left: 16px;
+        border-radius: 8.03px;
+        padding: 6.02px;
+        gap: 8.03px;
+    }
+
+    .screens .images .image-company-list .title {
+        font-size: 6.02px;
+        line-height: 6.52px;
+    }
+
+    .screens .images .image-company-list .job-list {
+        gap: 7.02px;
+    }
+
+    .screens .images .image-company-list .job-list .job {
+        gap: 2.01px;
+    }
+
+    .screens .images .image-company-list .job-list .job .job-info {
+        gap: 0.5px;
+    }
+
+    .screens .images .image-company-list .job-list .job .job-info .company {
+        gap: 2.01px;
+    }
+
+    .screens .images .image-company-list .job-list .job .job-info .company .company-name {
+        font-size: 6.02px;
+        line-height: 7.02px;
+    }
+
+    .screens .images .image-company-list .job-list .job .job-info .company .period,
+    .screens .images .image-company-list .job-list .job .job-info .company-link,
+    .screens .images .image-company-list .job-list .job .position {
+        font-size: 4.51px;
+        line-height: 6.52px;
+    }
+    
+    .price-block .price-list {
+        flex-direction: column;
+    }
+
+    .faq .faq-list .q-and-a .q-and-a-title {
+        max-width: 261px;
+    }
+
+    .faq .faq-list .q-and-a .q-and-a-text {
+        max-width: 287px;
+    }   
+
+}
